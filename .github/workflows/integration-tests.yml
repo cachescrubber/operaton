@@ -84,9 +84,11 @@ jobs:
         id: maven-build
         shell: bash
         run: |
-          # first build the project and install to local repository
-          ./mvnw clean install -DskipTests
-          # now run the integration tests
+          ./mvnw -DskipTests clean install
+      - name: Execute Integration Tests
+        id: maven-integration-tests
+        shell: bash
+        run: |
           ./mvnw -DskipTests -Pdistro,distro-webjar,distro-${{ matrix.container }},${{ matrix.container }},h2-in-memory clean install
       - name: Execute Integration Tests
         id: maven-integration-tests
