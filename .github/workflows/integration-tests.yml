@@ -29,7 +29,6 @@ on:
         default: '["tomcat", "wildfly"]'
         options:
           - '["tomcat"]'
-          - '["tomcat9"]'
           - '["wildfly"]'
           - '["tomcat", "wildfly"]'
       database:
