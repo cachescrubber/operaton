@@ -12,7 +12,7 @@
 
   <dependencySets>
 
-    <!-- Copy the engine-rest-core-jakarta along with its transitive dependencies (compile)  -->
+    <!-- Copy the engine-rest-core along with its transitive dependencies (compile)  -->
     <dependencySet>
       <outputDirectory>WEB-INF/lib</outputDirectory>
       <useTransitiveDependencies>true</useTransitiveDependencies>
@@ -49,7 +49,7 @@
     <dependencySet>
       <outputDirectory>/</outputDirectory>
       <includes>
-        <include>org.operaton.bpm:operaton-engine-rest-jakarta:war:*</include>
+        <include>org.operaton.bpm:operaton-engine-rest:war:*</include>
       </includes>
       <unpack>true</unpack>
       <unpackOptions>
