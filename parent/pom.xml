@@ -62,7 +62,12 @@
 
     <version.tomcat>10.1.30</version.tomcat>
 
-    <version.arquillian>1.7.0.Final</version.arquillian>
+    <version.arquillian>1.9.3.Final</version.arquillian>
+    <version.arquillian-jakarta>10.0.0.Final</version.arquillian-jakarta>
+    <version.arquillian.container>4.0.0.Final</version.arquillian.container>
+    <weld.version>6.0.1.Final</weld.version>
+
+
     <version.shrinkwrap.resolvers>3.3.3</version.shrinkwrap.resolvers>
     <version.selenium>4.10.0</version.selenium>
     <version.freemarker>2.3.31</version.freemarker>
