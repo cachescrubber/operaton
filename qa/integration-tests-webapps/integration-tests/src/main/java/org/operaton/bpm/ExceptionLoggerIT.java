@@ -20,7 +20,7 @@ import static org.junit.Assert.assertEquals;
 
 import jakarta.ws.rs.core.Response;
 
-import com.sun.jersey.api.client.ClientResponse;
+import org.glassfish.jersey.client.ClientResponse;
 import org.junit.Before;
 import org.junit.Test;
 

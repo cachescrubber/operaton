@@ -1,4 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <artifactId>operaton-qa-integration-tests-webapps</artifactId>
@@ -9,7 +10,7 @@
     <artifactId>operaton-qa-integration-tests-webapps-root</artifactId>
     <version>1.0.0-beta-4-SNAPSHOT</version>
   </parent>
-  
+
   <!-- 
     Maven modules running these tests with the failsafe plugin should declare the following system property:
     
@@ -52,6 +53,20 @@
       <type>jar</type>
       <classifier>classes</classifier>
       <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.httpcomponents.client5</groupId>
+      <artifactId>httpclient5</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.glassfish.jersey.core</groupId>
+      <artifactId>jersey-client</artifactId>
+      <version>3.1.10</version>
+    </dependency>
+    <dependency>
+      <groupId>org.codehaus.jettison</groupId>
+      <artifactId>jettison</artifactId>
+      <version>1.5.4</version>
     </dependency>
     <dependency>
       <groupId>junit</groupId>

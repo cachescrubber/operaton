@@ -25,7 +25,7 @@ import jakarta.ws.rs.core.MediaType;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.sun.jersey.api.client.ClientResponse;
+import org.glassfish.jersey.client.ClientResponse;
 
 public class CsrfPreventionIT extends AbstractWebIntegrationTest {
 

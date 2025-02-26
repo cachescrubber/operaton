@@ -25,7 +25,7 @@ import jakarta.ws.rs.core.Response.Status;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.sun.jersey.api.client.ClientResponse;
+import org.glassfish.jersey.client.ClientResponse;
 
 public class ErrorPageIT extends AbstractWebIntegrationTest {
 

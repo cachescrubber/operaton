@@ -16,7 +16,7 @@
  */
 package org.operaton.bpm.rest;
 
-import com.sun.jersey.api.client.ClientResponse;
+import org.glassfish.jersey.client.ClientResponse;
 import com.sun.jersey.api.client.WebResource;
 
 import org.operaton.bpm.AbstractWebIntegrationTest;
