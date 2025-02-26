@@ -22,7 +22,6 @@
     <version.spring-boot>3.4.1</version.spring-boot>
     <version.resteasy>6.2.11.Final</version.resteasy>
     <version.jersey3>3.1.9</version.jersey3>
-    <version.jersey3>3.1.9</version.jersey3>
     <version.ejb>3.1</version.ejb>
     <!-- use minimum version of resteasy and jersey -->
     <version.jaxrs.api>2.0.1.Final</version.jaxrs.api>
@@ -316,7 +315,6 @@
             <rules>
               <jakartaDefaults>true</jakartaDefaults>
               <renames>
-                <rename>jar:file:${org.operaton.bpm:operaton-engine:jar}!/META-INF/jakarta-renames.properties</rename>
                 <rename>jar:file:${org.operaton.bpm:operaton-engine:jar}!/META-INF/operaton-renames.properties</rename>
               </renames>
             </rules>
