@@ -17,7 +17,7 @@
 package org.operaton.bpm.engine.cdi.test.impl.util;
 
 import jakarta.enterprise.inject.Produces;
-import javax.inject.Named;
+import jakarta.inject.Named;
 
 public class BeanWithProducerMethods {
 

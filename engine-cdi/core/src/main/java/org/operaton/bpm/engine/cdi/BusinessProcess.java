@@ -22,8 +22,8 @@ import java.util.Map;
 import jakarta.enterprise.context.Conversation;
 import jakarta.enterprise.context.RequestScoped;
 import jakarta.enterprise.inject.Instance;
-import javax.inject.Inject;
-import javax.inject.Named;
+import jakarta.inject.Inject;
+import jakarta.inject.Named;
 
 import org.operaton.bpm.engine.ProcessEngine;
 import org.operaton.bpm.engine.ProcessEngineException;

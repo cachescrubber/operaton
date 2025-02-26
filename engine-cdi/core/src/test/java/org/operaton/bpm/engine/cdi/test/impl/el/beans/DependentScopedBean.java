@@ -22,7 +22,7 @@ import java.util.List;
 import jakarta.annotation.PostConstruct;
 import jakarta.annotation.PreDestroy;
 import jakarta.enterprise.context.Dependent;
-import javax.inject.Named;
+import jakarta.inject.Named;
 
 /**
  * @author Daniel Meyer

@@ -18,8 +18,8 @@ package org.operaton.bpm.engine.cdi;
 
 import jakarta.enterprise.inject.Produces;
 import jakarta.enterprise.inject.Typed;
-import javax.inject.Inject;
-import javax.inject.Named;
+import jakarta.inject.Inject;
+import jakarta.inject.Named;
 
 import org.operaton.bpm.engine.cdi.annotation.ExecutionId;
 import org.operaton.bpm.engine.cdi.annotation.ProcessInstanceId;

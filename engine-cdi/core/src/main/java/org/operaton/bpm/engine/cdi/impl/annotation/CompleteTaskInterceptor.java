@@ -19,7 +19,7 @@ package org.operaton.bpm.engine.cdi.impl.annotation;
 import java.io.Serializable;
 import java.lang.reflect.InvocationTargetException;
 
-import javax.inject.Inject;
+import jakarta.inject.Inject;
 import javax.interceptor.AroundInvoke;
 import javax.interceptor.Interceptor;
 import javax.interceptor.InvocationContext;

@@ -21,7 +21,7 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
 import jakarta.enterprise.util.Nonbinding;
-import javax.inject.Qualifier;
+import jakarta.inject.Qualifier;
 
 import org.operaton.bpm.engine.variable.value.TypedValue;
 

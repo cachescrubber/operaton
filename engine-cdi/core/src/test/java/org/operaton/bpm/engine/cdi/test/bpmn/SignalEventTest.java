@@ -21,8 +21,8 @@ import static org.junit.Assert.assertEquals;
 import java.util.HashMap;
 
 import jakarta.enterprise.context.Dependent;
-import javax.inject.Inject;
-import javax.inject.Named;
+import jakarta.inject.Inject;
+import jakarta.inject.Named;
 
 import org.operaton.bpm.engine.RuntimeService;
 import org.operaton.bpm.engine.cdi.BusinessProcess;

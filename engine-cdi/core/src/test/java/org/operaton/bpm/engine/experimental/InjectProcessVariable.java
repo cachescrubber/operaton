@@ -17,7 +17,7 @@
 package org.operaton.bpm.engine.experimental;
 
 import jakarta.enterprise.context.Dependent;
-import javax.inject.Inject;
+import jakarta.inject.Inject;
 
 import org.operaton.bpm.engine.cdi.annotation.ProcessVariable;
 

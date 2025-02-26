@@ -27,7 +27,7 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.Target;
 
 import jakarta.enterprise.util.Nonbinding;
-import javax.inject.Qualifier;
+import jakarta.inject.Qualifier;
 
 
 @Qualifier

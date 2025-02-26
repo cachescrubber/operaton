@@ -24,7 +24,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 
 import jakarta.enterprise.context.Dependent;
-import javax.inject.Named;
+import jakarta.inject.Named;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

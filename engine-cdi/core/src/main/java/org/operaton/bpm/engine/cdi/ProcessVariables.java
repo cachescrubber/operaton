@@ -22,8 +22,8 @@ import java.util.logging.Logger;
 
 import jakarta.enterprise.inject.Produces;
 import jakarta.enterprise.inject.spi.InjectionPoint;
-import javax.inject.Inject;
-import javax.inject.Named;
+import jakarta.inject.Inject;
+import jakarta.inject.Named;
 
 import org.operaton.bpm.engine.cdi.annotation.ProcessVariable;
 import org.operaton.bpm.engine.cdi.annotation.ProcessVariableLocal;

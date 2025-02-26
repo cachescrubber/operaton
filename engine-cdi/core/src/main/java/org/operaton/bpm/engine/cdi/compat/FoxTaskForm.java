@@ -18,7 +18,7 @@ package org.operaton.bpm.engine.cdi.compat;
 
 import jakarta.enterprise.context.ConversationScoped;
 import jakarta.enterprise.inject.Typed;
-import javax.inject.Named;
+import jakarta.inject.Named;
 
 import org.operaton.bpm.engine.cdi.jsf.TaskForm;
 

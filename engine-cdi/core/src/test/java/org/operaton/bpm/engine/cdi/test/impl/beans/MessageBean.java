@@ -19,7 +19,7 @@ package org.operaton.bpm.engine.cdi.test.impl.beans;
 import java.io.Serializable;
 
 import jakarta.enterprise.context.ApplicationScoped;
-import javax.inject.Named;
+import jakarta.inject.Named;
 
 /**
  * @author Daniel Meyer

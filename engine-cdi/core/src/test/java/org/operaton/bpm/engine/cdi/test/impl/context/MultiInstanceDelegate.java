@@ -22,8 +22,8 @@ import org.operaton.bpm.engine.delegate.JavaDelegate;
 import org.junit.Assert;
 
 import jakarta.enterprise.context.Dependent;
-import javax.inject.Inject;
-import javax.inject.Named;
+import jakarta.inject.Inject;
+import jakarta.inject.Named;
 
 @Named
 @Dependent
