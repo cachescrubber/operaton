@@ -21,8 +21,8 @@ import org.operaton.bpm.run.qa.util.SpringBootManagedContainer;
 import java.util.Arrays;
 import java.util.Collection;
 
-import javax.ws.rs.core.MediaType;
-import javax.ws.rs.core.Response.Status;
+import jakarta.ws.rs.core.MediaType;
+import jakarta.ws.rs.core.Response.Status;
 
 import com.sun.jersey.api.client.ClientResponse;
 import org.junit.jupiter.api.AfterEach;

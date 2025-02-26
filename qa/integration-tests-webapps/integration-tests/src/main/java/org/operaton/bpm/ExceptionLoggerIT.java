@@ -18,7 +18,7 @@ package org.operaton.bpm;
 
 import static org.junit.Assert.assertEquals;
 
-import javax.ws.rs.core.Response;
+import jakarta.ws.rs.core.Response;
 
 import com.sun.jersey.api.client.ClientResponse;
 import org.junit.Before;

@@ -22,7 +22,7 @@ import static org.junit.Assert.fail;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 
-import javax.ws.rs.core.MediaType;
+import jakarta.ws.rs.core.MediaType;
 
 import org.operaton.bpm.engine.rest.mapper.JacksonConfigurator;
 import org.codehaus.jettison.json.JSONArray;

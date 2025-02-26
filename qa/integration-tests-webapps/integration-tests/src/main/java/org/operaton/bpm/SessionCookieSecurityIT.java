@@ -20,7 +20,7 @@ import com.sun.jersey.api.client.ClientResponse;
 import org.junit.Before;
 import org.junit.Test;
 
-import javax.ws.rs.core.MultivaluedMap;
+import jakarta.ws.rs.core.MultivaluedMap;
 
 import java.util.List;
 
