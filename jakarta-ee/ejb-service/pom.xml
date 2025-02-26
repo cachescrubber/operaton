@@ -1,8 +1,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <artifactId>operaton-jobexecutor-ra</artifactId>
-  <packaging>jar</packaging>
-  <name>Operaton - Job Executor RA</name>
+
+  <groupId>org.operaton.bpm.jakartaee</groupId>
+  <artifactId>operaton-ejb-service</artifactId>
+  <packaging>ejb</packaging>
+
+  <name>Operaton - EJB Service</name>
 
   <parent>
     <groupId>org.operaton.bpm</groupId>
@@ -10,11 +13,6 @@
     <relativePath>../../parent</relativePath>
     <version>1.0.0-beta-4-SNAPSHOT</version>
   </parent>
-
-  <properties>
-    <!-- TODO: move to parent -->
-    <version.org.jboss.ironjacamar>1.0.10.Final</version.org.jboss.ironjacamar>
-  </properties>
 
   <dependencyManagement>
     <dependencies>
@@ -25,11 +23,17 @@
         <scope>import</scope>
         <type>pom</type>
       </dependency>
+      <dependency>
+        <groupId>jakarta.platform</groupId>
+        <artifactId>jakarta.jakartaee-bom</artifactId>
+        <version>${version.jakarta-ee-spec}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
     </dependencies>
   </dependencyManagement>
 
   <dependencies>
-
     <dependency>
       <groupId>org.operaton.bpm</groupId>
       <artifactId>operaton-engine</artifactId>
@@ -37,27 +41,37 @@
     </dependency>
 
     <dependency>
-      <groupId>org.jboss.ironjacamar</groupId>
-      <artifactId>ironjacamar-spec-api</artifactId>
-      <version>${version.org.jboss.ironjacamar}</version>
+      <groupId>org.operaton.bpm.jakartaee</groupId>
+      <artifactId>operaton-jobexecutor-ra</artifactId>
       <scope>provided</scope>
+      <version>${project.version}</version>
     </dependency>
 
     <dependency>
-      <groupId>org.codehaus.fabric3.api</groupId>
-      <artifactId>commonj</artifactId>
-      <version>1.1.0</version>
-      <scope>provided</scope>
+      <groupId>jakarta.annotation</groupId>
+      <artifactId>jakarta.annotation-api</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>jakarta.ejb</groupId>
+      <artifactId>jakarta.ejb-api</artifactId>
     </dependency>
 
     <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <scope>test</scope>
+      <groupId>org.glassfish.extras</groupId>
+      <artifactId>glassfish-embedded-all</artifactId>
+      <version>3.1.1</version>
+      <scope>provided</scope>
     </dependency>
-
   </dependencies>
 
-  <groupId>org.operaton.bpm.javaee</groupId>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-ejb-plugin</artifactId>
+      </plugin>
+    </plugins>
+  </build>
+
   <description>${project.name}</description>
 </project>

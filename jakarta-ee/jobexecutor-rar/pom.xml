@@ -1,6 +1,6 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.operaton.bpm.javaee</groupId>
+  <groupId>org.operaton.bpm.jakartaee</groupId>
   <artifactId>operaton-jobexecutor-rar</artifactId>
   <packaging>rar</packaging>
   <name>Operaton - Job Executor RAR</name>
@@ -26,7 +26,7 @@
 
   <dependencies>
     <dependency>
-      <groupId>org.operaton.bpm.javaee</groupId>
+      <groupId>org.operaton.bpm.jakartaee</groupId>
       <artifactId>operaton-jobexecutor-ra</artifactId>
       <version>${project.version}</version>
     </dependency>

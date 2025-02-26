@@ -33,7 +33,7 @@
     </dependency>
 
     <dependency>
-      <groupId>org.operaton.bpm.javaee</groupId>
+      <groupId>org.operaton.bpm.jakartaee</groupId>
       <artifactId>operaton-ejb-client</artifactId>
     </dependency>
     
