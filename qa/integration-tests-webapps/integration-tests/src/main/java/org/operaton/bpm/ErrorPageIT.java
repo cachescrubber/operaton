@@ -16,6 +16,10 @@
  */
 package org.operaton.bpm;
 
+import java.net.URI;
+import java.net.http.HttpRequest;
+import java.net.http.HttpResponse;
+
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
@@ -35,20 +39,21 @@ public class ErrorPageIT extends AbstractWebIntegrationTest {
   }
 
   @Test
-  public void shouldCheckNonFoundResponse() {
+  public void shouldCheckNonFoundResponse() throws Exception {
     // when
-    ClientResponse response = client.resource(appBasePath + "nonexisting")
-        .get(ClientResponse.class);
+    HttpRequest request = HttpRequest.newBuilder()
+      .uri(URI.create(appBasePath + "nonexisting"))
+      .GET()
+      .build();
+
+    HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
 
     // then
-    assertEquals(Status.NOT_FOUND.getStatusCode(), response.getStatus());
-    assertTrue(response.getType().toString().startsWith(MediaType.TEXT_HTML));
-    String responseEntity = response.getEntity(String.class);
+    assertEquals(Status.NOT_FOUND.getStatusCode(), response.statusCode());
+    assertTrue(response.headers().firstValue("Content-Type").orElse("").startsWith(MediaType.TEXT_HTML));
+    String responseEntity = response.body();
     assertTrue(responseEntity.contains("Operaton"));
     assertTrue(responseEntity.contains("Not Found"));
-
-    // cleanup
-    response.close();
   }
 
 }
