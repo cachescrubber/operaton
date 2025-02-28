@@ -71,11 +71,6 @@ public abstract class AbstractWebIntegrationTest {
     testUtil = new TestUtil(testProperties);
   }
 
-  @After
-  public void destroyClient() {
-    client = null;
-  }
-
   public void createClient(String ctxPath) throws Exception {
     testProperties = new TestProperties();
 
