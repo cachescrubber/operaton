@@ -48,16 +48,10 @@
     </dependency>
     <dependency>
       <groupId>org.wiremock</groupId>
-      <artifactId>wiremock</artifactId>
-      <version>${version.wiremock}</version>
+      <artifactId>wiremock-standalone</artifactId>
       <scope>test</scope>
     </dependency>
-    <dependency>
-      <groupId>org.wiremock</groupId>
-      <artifactId>wiremock-jetty12</artifactId>
-      <version>${version.wiremock}</version>
-      <scope>test</scope>
-    </dependency>
+
     <dependency>
       <groupId>org.assertj</groupId>
       <artifactId>assertj-core</artifactId>
